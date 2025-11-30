@@ -1,4 +1,4 @@
-# From-Scratch ML Paper Reimplementations 2025–2026
+# From-Scratch ML Paper Replications and Reproductions
 
 One seminal paper → full reimplementation every week
 
