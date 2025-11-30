@@ -1,199 +1,73 @@
-# Research Paper Implementations 📚🔬
+# 🧠 From-Scratch: Deep Learning Paper Implementations
 
-Welcome to my collection of research paper implementations! This repository contains my implementations of various cutting-edge research papers across different domains of Artificial Intelligence, Machine Learning, and Deep Learning.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Schedule](https://img.shields.io/badge/New%20Implementation-Every%20Friday-blueviolet)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 📊 Implementation Statistics
+> *"What I cannot create, I do not understand."* — Richard Feynman
+><!-- <img width="687" height="440" alt="image" src="https://github.com/user-attachments/assets/694f01ff-a0c8-47af-ab14-a73501c150d0" /> -->
 
-| Category | Implemented | To Implement | Total Papers |
-|----------|-------------|--------------|--------------|
-| **Computer Vision** | 0 | 0 | 0 |
-| **Natural Language Processing** | 0 | 0 | 0 |
-| **Reinforcement Learning** | 0 | 0 | 0 |
-| **Generative Models** | 0 | 0 | 0 |
-| **Graph Neural Networks** | 0 | 0 | 0 |
-| **Time Series Analysis** | 0 | 0 | 0 |
-| **Optimization & Training** | 0 | 0 | 0 |
-| **Other/Miscellaneous** | 0 | 0 | 0 |
-| **TOTAL** | **0** | **0** | **0** |
 
----
+## 📖 About This Repository
+This repository documents my journey of **implementing, replicating, and experimenting** with seminal Deep Learning papers and architectures from scratch.
 
-## 🎯 Implemented Papers
+**The Goal:** To demystify the "black box" of neural networks.
+**The Rule:** No pre-built model imports (e.g., `torchvision.models`). Every layer, training loop, and architecture is built from the ground up to understand the internal mechanics.
 
-### 🖼️ Computer Vision (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Implementation | Paper Link | Status |
-|---|-------------|---------|------|-------------------|----------------|------------|--------|
-| - | *No implementations yet* | - | - | - | - | - | - |
-
-### 📝 Natural Language Processing (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Implementation | Paper Link | Status |
-|---|-------------|---------|------|-------------------|----------------|------------|--------|
-| - | *No implementations yet* | - | - | - | - | - | - |
-
-### 🎮 Reinforcement Learning (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Implementation | Paper Link | Status |
-|---|-------------|---------|------|-------------------|----------------|------------|--------|
-| - | *No implementations yet* | - | - | - | - | - | - |
-
-### 🎨 Generative Models (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Implementation | Paper Link | Status |
-|---|-------------|---------|------|-------------------|----------------|------------|--------|
-| - | *No implementations yet* | - | - | - | - | - | - |
-
-### 🕸️ Graph Neural Networks (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Implementation | Paper Link | Status |
-|---|-------------|---------|------|-------------------|----------------|------------|--------|
-| - | *No implementations yet* | - | - | - | - | - | - |
-
-### 📈 Time Series Analysis (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Implementation | Paper Link | Status |
-|---|-------------|---------|------|-------------------|----------------|------------|--------|
-| - | *No implementations yet* | - | - | - | - | - | - |
-
-### ⚙️ Optimization & Training (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Implementation | Paper Link | Status |
-|---|-------------|---------|------|-------------------|----------------|------------|--------|
-| - | *No implementations yet* | - | - | - | - | - | - |
-
-### 🔧 Other/Miscellaneous (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Implementation | Paper Link | Status |
-|---|-------------|---------|------|-------------------|----------------|------------|--------|
-| - | *No implementations yet* | - | - | - | - | - | - |
+## 🗓️ The Schedule
+I commit to adding a new implementation **every Friday**.
 
 ---
 
-## 📋 Papers To Implement (Research Collection)
+## 🚀 Progress & Benchmarks
 
-### 🖼️ Computer Vision (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Paper Link | Priority | Notes |
-|---|-------------|---------|------|-------------------|------------|----------|-------|
-| - | *No papers collected yet* | - | - | - | - | - | - |
-
-### 📝 Natural Language Processing (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Paper Link | Priority | Notes |
-|---|-------------|---------|------|-------------------|------------|----------|-------|
-| - | *No papers collected yet* | - | - | - | - | - | - |
-
-### 🎮 Reinforcement Learning (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Paper Link | Priority | Notes |
-|---|-------------|---------|------|-------------------|------------|----------|-------|
-| - | *No papers collected yet* | - | - | - | - | - | - |
-
-### 🎨 Generative Models (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Paper Link | Priority | Notes |
-|---|-------------|---------|------|-------------------|------------|----------|-------|
-| - | *No papers collected yet* | - | - | - | - | - | - |
-
-### 🕸️ Graph Neural Networks (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Paper Link | Priority | Notes |
-|---|-------------|---------|------|-------------------|------------|----------|-------|
-| - | *No papers collected yet* | - | - | - | - | - | - |
-
-### 📈 Time Series Analysis (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Paper Link | Priority | Notes |
-|---|-------------|---------|------|-------------------|------------|----------|-------|
-| - | *No papers collected yet* | - | - | - | - | - | - |
-
-### ⚙️ Optimization & Training (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Paper Link | Priority | Notes |
-|---|-------------|---------|------|-------------------|------------|----------|-------|
-| - | *No papers collected yet* | - | - | - | - | - | - |
-
-### 🔧 Other/Miscellaneous (0 papers)
-
-| # | Paper Title | Authors | Year | Conference/Journal | Paper Link | Priority | Notes |
-|---|-------------|---------|------|-------------------|------------|----------|-------|
-| - | *No papers collected yet* | - | - | - | - | - | - |
+| SN | Paper / Architecture | Domain | Key Concepts | Result | Status | Code |
+|:--:|:---|:---|:---|:---|:--:|:--:|
+| **01** | **[LeNet-5 (LeCun et al., 1998)](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)** | CV | CNN, Tanh, AvgPool | 98.4% Acc | ✅ | [📂 View](/01_lenet5_1998) |
+| **02** | *Next Paper...* | — | — | — | 🚧 | — |
+| **03** | — | — | — | — | ⏳ | — |
+| **04** | — | — | — | — | ⏳ | — |
+| **05** | — | — | — | — | ⏳ | — |
+| **06** | — | — | — | — | ⏳ | — |
+| **07** | — | — | — | — | ⏳ | — |
+| **08** | — | — | — | — | ⏳ | — |
+| **09** | — | — | — | — | ⏳ | — |
+| **10** | — | — | — | — | ⏳ | — |
+| **11** | — | — | — | — | ⏳ | — |
+| **12** | — | — | — | — | ⏳ | — |
 
 ---
 
-## 📁 Repository Structure
+## 📂 Repository Structure
+
+Each paper is contained in its own folder to keep the environment self-contained.
+
+```text
+├── 01_lenet5_1998/
+│   ├── model.py         # The model architecture (from scratch)
+│   ├── train.py         # Training loop
+│   ├── utils.py         # Data loading and helper functions
+│   ├── notebooks/       # EDA and Visualization experiments
+│   └── README.md        # Specific results/notes for this paper
+├── 02_next_paper/
+├── common/              # Shared utilities (logging, metrics)
+└── README.md
 
 ```
-📦 research-paper-implementations/
-├── 📂 computer-vision/
-│   ├── 📂 paper-name-1/
-│   │   ├── 📄 README.md
-│   │   ├── 📄 implementation.py
-│   │   ├── 📄 requirements.txt
-│   │   └── 📂 assets/
-├── 📂 nlp/
-├── 📂 reinforcement-learning/
-├── 📂 generative-models/
-├── 📂 graph-neural-networks/
-├── 📂 time-series/
-├── 📂 optimization/
-├── 📂 miscellaneous/
-├── 📄 README.md
-└── 📄 requirements.txt
+## 🛠️ Getting Started
+
+Follow these steps to set up the project locally.
+
+### 1. Clone the repository
+
+```bash
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+cd your-repo-name
+
 ```
-
-## 🎯 Implementation Guidelines
-
-Each paper implementation includes:
-
-- **📝 Clear README**: Explanation of the paper, methodology, and implementation details
-- **💻 Clean Code**: Well-documented, modular, and reproducible code
-- **📊 Results**: Performance metrics and comparison with paper results
-- **🔗 References**: Links to original paper and related resources
-- **⚙️ Dependencies**: Complete requirements.txt file
-
-## 🚀 Status Legend
-
-**For Implemented Papers:**
-- ✅ **Complete**: Full implementation with results
-- 🚧 **In Progress**: Currently working on implementation
-- ❌ **Paused**: Implementation temporarily on hold
-
-**For Papers To Implement:**
-- 🔥 **High Priority**: Want to implement soon
-- ⭐ **Medium Priority**: Interesting, will implement eventually
-- 📚 **Low Priority**: Good to have, implement when time permits
-- 💡 **Research**: Just keeping for reference/inspiration
-
-## 🤝 Contributing
-
-Feel free to:
-- Suggest interesting papers to implement
-- Report bugs or improvements
-- Share your own implementations
-- Discuss implementation details
-
-## 📞 Contact
-
-For questions, suggestions, or collaborations, feel free to reach out!
-
----
-
-## 📚 Recent Additions
-
-*No implementations added yet. This section will be updated with the latest additions.*
-
-## 🎖️ Milestones
-
-- [ ] First implementation (0/1)
-- [ ] 5 implementations (0/5)
-- [ ] 10 implementations (0/10)
-- [ ] 25 implementations (0/25)
-- [ ] 50 implementations (0/50)
-
----
-
-**Last Updated:** [DATE]
-
-*This README is automatically updated with each new implementation.*
+## 2. Run a specific implementation
+Navigate to the specific folder to run
+```bash
+cd 01_lenet5_1998
+python train.py
