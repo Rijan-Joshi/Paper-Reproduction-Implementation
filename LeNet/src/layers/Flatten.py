@@ -2,7 +2,7 @@
 class Flatten:
 
     def __init__(self,):
-        self.shape = shape
+        self.shape = None
     
     def forward(self, X):
         self.shape = X.shape

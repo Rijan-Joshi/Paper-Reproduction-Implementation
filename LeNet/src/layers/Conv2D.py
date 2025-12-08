@@ -1,4 +1,4 @@
-from LeNet.src.utils.ScaledTanh import ScaledTanh
+from src.utils.ScaledTanh import ScaledTanh
 import numpy as np
 
 connection = [

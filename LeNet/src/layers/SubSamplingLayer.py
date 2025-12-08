@@ -1,6 +1,6 @@
 #Subsampling Layer for the Model
 
-from LeNet.src.utils.ScaledTanh import ScaledTanh
+from src.utils.ScaledTanh import ScaledTanh
 import numpy as np
 
 class SubSample:
@@ -58,7 +58,7 @@ class SubSample:
         self.Z = np.zeros_like(out)
     
         for channel in range(channels):
-            self.Z[:, channel] =   self.alpha[channel] * out[:, channel] + self.beta[channel]
+            self.Z[:, channel] = self.alpha[channel] * out[:, channel] + self.beta[channel]
 
         self.A = self.tanh.forward(self.Z)
 
