@@ -27,7 +27,6 @@ class RBFLoss:
         return loss, per_sample
     
     def backward(self):
-        ...
 
         rbf_output, y = self._cache
 
@@ -43,7 +42,7 @@ class RBFLoss:
 
         dout[np.arange(batch), y] = 1
 
-        dout -= exp_neg/garbage
+        dout -= exp_neg/denom
 
         return dout
 
