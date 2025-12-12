@@ -13,4 +13,8 @@ class SDLM:
         self.hessian_diag = {}
         self.lr_multipliers = {}
     
+    def set_learning_rate(self, name, lr):
+        self.lr_multipliers[name] = lr
     
+    def step(self, named_params, grads):
+        ...
