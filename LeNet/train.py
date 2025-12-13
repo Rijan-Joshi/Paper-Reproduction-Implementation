@@ -1,15 +1,24 @@
 from src.optimizer.SDLM import SDLM
 from model import LeNet5
 from src.utils.data_loader import load_data
+import tqdm
+import numpy as np
 
 def train(X, y):
     """
         Training based on LeNet-5 Architecture 
+        1. Load the data
+        2. Split into training and validation set
+        3. Forward Pass:  Train the model in the batch of 128 
+        4. Calculate the loss for the batch
+        5. Backward Pass: Backpropagate and calculate the gradient using backward() function
+        6. Optimization: Update the training parameters using the optimizer SDLM
     """
 
     model = LeNet5()
     optimizer = SDLM()
     n_val = 5000
+
 
     #Set the learning rate based on layer as per the LeNet-5 paper
     lr_schedule = {
@@ -40,9 +49,53 @@ def train(X, y):
     y_train = y_train[5000: ]
 
     #Training through epochs
-    epoch = 20
+    epochs = 20
+    batch_size = 128
+    n_samples = X_train.shape[0]
+    n_batches = n_samples // batch_size
+    history = {
+        'train_loss' : [],
+        'train_acc' : [],
+        'val_loss' : [],
+        'val_acc' : [],
+        'learning_rate' : [],
+    }
 
-    for i in range(epoch):
+    for epoch in range(epoch):
+        indices = np.random.permutation(n_samples)
+        
+        epoch_loss = 0
+        epoch_correct = 0
+
+        pbar = tqdm(range(0, n_samples, batch_size), desc = f"Epoch {epoch + 1} / {epochs}", leave = False)
+
+        for start in pbar:
+            end = min(start + batch_size, n_samples)
+            batch_idx = indices[start: end]
+            X_batch = X_train[batch_idx]
+            y_batch = y_train[batch_idx]
+
+            #Forward Pass
+            Y_batch = model.forward(X_batch)
+            
+            #Compute Loss
+            loss = model.compute_loss(Y_batch, y_batch)
+            epoch_loss += loss
+
+            #Backward Pass
+            dout = model.MAP_Loss.backward()
+            model.backward(dout)
+            
+            #Optimization
+            named_params, grads = model.get_named_params_and_grads()
+            optimizer.step(named_params, grads)
+
+            #Accuracy
+            predictions = np.argmin(Y_batch, axis = 1)
+            epoch_correct += np.sum(predictions == y_batch)
+        
+        train_loss = epoch_loss / 
+
 
 
 # if __name__ == "__main__":

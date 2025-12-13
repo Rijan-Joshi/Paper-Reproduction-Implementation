@@ -88,6 +88,7 @@ class LeNet5:
     def compute_loss(self, Y, y_true):
         loss, _ = self.MAP_Loss.forward(Y, y_true)
         return loss
+    
 
     def get_named_params_and_grads(self):
         named_params = []
