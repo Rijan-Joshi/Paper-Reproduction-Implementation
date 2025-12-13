@@ -28,6 +28,6 @@ class SDLM:
             lr = self.lr_multipliers.get(name, self.lr)
 
             #SDLM Update
-            denom  = self.mu + np.sqrt(self.hessian_diag[name]) + self.eps
+            denom  = self.damping + np.sqrt(self.hessian_diag[name]) + self.eps
             param -= lr * grad/ denom
 

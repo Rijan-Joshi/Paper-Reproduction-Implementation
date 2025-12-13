@@ -174,6 +174,9 @@ class Conv2D:
                             dX[n, :, start_h:end_h, start_w:end_w] += (
                                 dZ[n, o, h, w] * self.W[o]
                             )
+                        
+        if self.connection_table:
+            dW = [dw / batch for dw in dW]
 
-        self.grads = {"W": dW / batch, "b": db / batch}
+        self.grads = {"W": dW , "b": db / batch}
         return dX

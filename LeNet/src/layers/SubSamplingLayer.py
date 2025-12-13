@@ -69,7 +69,7 @@ class SubSample:
             Backward Pass for SubSampling 
         """
 
-        N, C, H, W = self.dA.shape
+        N, C, H, W = dA.shape
 
         dZ = self.tanh.backward(dA)
         K = self.pool_size
@@ -90,7 +90,7 @@ class SubSample:
                     for dj in range(K):
                         start_h = i * K
                         start_w = j * K
-                        dX[:, :, start_h: start_h + di, start_w:start_w+dj] = dZ[:, :, i, j] * self.alpha * (1 / (K * K))
+                        dX[:, :, start_h + di, start_w+dj] = dZ[:, :, i, j] * self.alpha * (1 / (K * K))
                 
         self.grads = {
             'alpha': d_alpha // N,

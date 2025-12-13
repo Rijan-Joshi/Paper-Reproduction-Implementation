@@ -11,7 +11,7 @@ class RBFLoss:
             y_true: (N,)
         """
 
-        batch = rbf_output[0]
+        batch = rbf_output.shape[0]
         correct_distances = rbf_output[np.arange(batch), y_true] # shape: (N,)
 
         junk = np.exp(-j) 
