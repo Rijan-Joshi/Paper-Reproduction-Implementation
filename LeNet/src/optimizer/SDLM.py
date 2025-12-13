@@ -17,4 +17,17 @@ class SDLM:
         self.lr_multipliers[name] = lr
     
     def step(self, named_params, grads):
-        ...
+        for (name, param), grad in zip(named_params, grads):
+            if name not in self.hessian_diag:
+                self.hessian_diag[name] = np.zeros_like(param)
+            
+            self.hessian_diag[name] = (
+                self.weight_decay * self.hessian_diag[name] + (1 - self.weight_decay) * (grad ** 2)
+            )
+
+            lr = self.lr_multipliers.get(name, self.lr)
+
+            #SDLM Update
+            denom  = self.mu + np.sqrt(self.hessian_diag[name]) + self.eps
+            param -= lr * grad/ denom
+

@@ -5,7 +5,6 @@ class RBFLoss:
     def __init__(self):
         self._cache = None
  
-    
     def forward(self, rbf_output, y_true, j = 1):
         """
             rbf_output: (N, C)
