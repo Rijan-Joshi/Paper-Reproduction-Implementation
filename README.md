@@ -13,8 +13,12 @@
 This repository documents my journey of **implementing, replicating, and experimenting** with seminal Deep Learning papers and architectures from scratch.
 
 **The Goal:** To demystify the "black box" of neural networks.
-**The Rule:** No pre-built model imports (e.g., `torchvision.models`). Every layer, training loop, and architecture is built from the ground up to understand the internal mechanics. 
-I will be implementing sometimes without Pytorch and sometimes with it. Every project will have its own readme, where the whole description of the project will be available.
+## 📜 The Rule
+_No pre-built model imports (e.g., torchvision.models). Every layer, training loop, and architecture is built from the ground up to understand the internal mechanics. Implementations will use either:
+
+NumPy: For true, low-level mathematical implementation of all operations (convolution, backprop, optimizers).
+
+PyTorch Tensors: For high-level implementations leveraging CUDA and automatic differentiation where desired._
 
 ## 🗓️ The Schedule
 I commit to adding a new implementation **every Friday**.
