@@ -1,6 +1,8 @@
 import os
 
-USE_GPU = os.getenv("USE_ENV", "O") == "1"
+USE_GPU = os.getenv("USE_GPU", "0") == "1"
+print(f"🔍 USE_GPU = '{os.getenv('USE_GPU', 'not set')}' → GPU mode: {USE_GPU}")
+
 
 if USE_GPU:
     try:

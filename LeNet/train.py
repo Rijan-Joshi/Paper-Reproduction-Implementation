@@ -1,11 +1,12 @@
+import os
+os.environ['USE_GPU']='1'
+
 import tqdm
 from src.utils.cupy_numpy import np
-import os
 from src.optimizer.SDLM import SDLM
 from model import LeNet5
 from src.utils.data_loader import load_data
 
-os.environ["USE_GPU"] = "1"
 
 def train(model, optimizer, X_train, y_train, X_val, y_val, epochs, batch_size):
     """

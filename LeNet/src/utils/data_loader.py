@@ -11,10 +11,10 @@ def load_data():
 
     (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
-    X_train = X_train.astype("float32")
-    y_train = y_train.astype("int32")
-    X_test = X_test.astype("float32")
-    y_test = y_test.astype("int32")
+    X_train = np.array(X_train.astype("float32"))
+    y_train = np.array(y_train.astype("int32"))
+    X_test = np.array(X_test.astype("float32"))
+    y_test = np.array(y_test.astype("int32"))
 
     # Normalization on the  basis of LeNet-5
     X_train = -0.005 * X_train + 1.175
@@ -25,8 +25,8 @@ def load_data():
     X_test = pad(X_test, 2, 2)
 
     # Add channel dimension
-    X_train = np.array(X_train[:, np.newaxis, :, :])
-    X_test = np.array(X_test[:, np.newaxis, :, :])
+    X_train = X_train[:, np.newaxis, :, :]
+    X_test = X_test[:, np.newaxis, :, :]
 
     return (X_train, X_test, y_train, y_test)
 
