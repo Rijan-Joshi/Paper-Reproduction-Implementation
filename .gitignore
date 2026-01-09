@@ -1,1 +1,36 @@
 LeNet/lenet/
+.venv/
+venv/
+data/
+*.tar.gz
+*.zip
+
+# Virtual environments
+.venv/
+venv/
+
+# Data & datasets
+data/
+**/data/
+*.tar.gz
+*.zip
+*.npz
+
+
+# Model checkpoints
+*.pth
+*.pt
+checkpoints/
+**/checkpoints/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Ignore python cache
+__pycache__/
+*.pyc
+
+# Ignore shortcuts and temp files
+*.lnk
+df
+dff
