@@ -13,7 +13,7 @@
 ### *This implementation is a full-scratch build, using only NumPy for all the operations, layers, optimizations, activations, and everything else. This required manual derivation and implementation of the forward and backward passes for every single layer.*
 
 
-## 📖 About This Repository
+## About This Repository
 This repository documents my journey of **implementing, replicating, and experimenting** with seminal Deep Learning papers and architectures from scratch.
 
 **The Goal:** To demystify the "black box" of neural networks.
